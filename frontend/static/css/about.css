@@ -1,0 +1,61 @@
+.form__post{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    align-content:center;
+    margin: 50px auto;
+    padding: 60px 30px 0;
+
+    
+}
+
+.form__group{
+    padding: 5px;
+    height: 100px;
+}
+.form__input-css {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    transition: 0.9s;
+    width:300px;
+    font-size:15px;
+    
+}
+.form__input-text{
+    width: 300px;
+    height: 100px;
+    border:1px solid #ccc;
+}
+
+.form__input-css:focus{
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+.form__input-text:focus{
+    border: 1px solid rgb(158, 158, 158);
+}
+
+button.form-btn{
+    margin: 50px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+button.form-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color:#fff
+}
+
+.form__post textarea{
+    resize: none;
+    transition: 0.9s;
+    font-size:15px;
+}
+

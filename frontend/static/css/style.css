@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('./abilities.css');
+@import url('./tooltip.css');
+@import url('./about.css');
+@import url('./slider.css');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+.skeleton{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.nav__header{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height: 100px;
+
+}
+
+.nav__header .nav__header_a{
+    position: absolute;
+    right:50px;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.nav__header a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding:  10px;
+    color: #000;
+    background-color: rgb(241, 238, 238);
+    border-radius: 25px;
+    opacity: 1;
+}
+
+
+
+.nav__header  a:hover {
+    background-color: rgb(0, 0, 0);
+    color:#fff
+}
+
+.main__text > h1{
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 225, 255);
+    text-align: center;
+ }
+ 
+.main__text > p{
+     text-align: center;
+  }
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main__content{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:60vh;
+    padding: 0 20px;
+}
+.main__content_img{
+    width: 100%;
+    height: 60vh;
+    border-radius:20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex:5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+
+.main__content h3{
+    position: absolute;
+    font-size: 24px;
+    bottom:20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.main__content_img.active {
+    flex:10;
+}
+
+.main__content_img.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+}
+
+.main__section2{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:50px;
+    cursor: pointer;
+    
+}
+
+.main__section2 a{
+    background-color: rgb(241, 238, 238);
+    border-radius: 25px;
+    padding: 20px;
+    font-size:18px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}
+
+.main__section2 a:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+
+.footer{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color:rgb(241, 238, 238);
+    margin-top: 50px;
+}
+
+
+.footer__nav{
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    color: #000;
+}
+
+.footer__nav p{
+    width: 50vh;
+    margin: 15px 20px;
+}
+
+.footer__social{
+    display:flex;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.social__link{
+    padding: 25px 40px;
+    cursor: pointer;
+    border-top: 20px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.social__link:nth-child(1){
+    background-image: url("https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-512.png");
+
+}
+
+
+.footer__social a{
+    z-index: 2;
+}
